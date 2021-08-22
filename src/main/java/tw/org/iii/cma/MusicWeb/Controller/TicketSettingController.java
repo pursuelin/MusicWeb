@@ -82,7 +82,7 @@ public class TicketSettingController {
 			} else {
 				model.addAttribute("update", result);
 			}
-			return "/pages/memberinfo";
+			return "/pages/ticketsetting";
 		} else if (ticketSetting != null && ticketSetting.equals("Delete")) {
 			boolean result = ticketSettingService.delete(ticketSettingBean);
 			if (!result) {
